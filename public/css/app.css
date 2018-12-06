@@ -10568,13 +10568,28 @@ header {
   margin-top: 15px;
   background-color: #004020;
   border-radius: 12px;
-  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
 }
 .form-group{
-  margin-right: 7px;
+  margin-right: 12px;
 }
 .form-inline{
-  margin-left: 15px;
+  margin-left: 25px;
+
+}
+.btn.btn-primary{
+  margin: 0px;
+  background-color: #004020;
+  color: #8CC63D;
+  font-weight: bold;
+  border-color: black;
+  border-radius: 12px;
+}
+.btn.btn-primary:hover{
+  background-color: #8CC63D;
+  color:  #004020;
 }
 
 /*twitter*/

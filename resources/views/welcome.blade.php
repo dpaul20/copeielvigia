@@ -52,12 +52,10 @@
 					<input type="email" class="form-control form-control-sm" id="correo" name="correo" placeholder="correo" value="{{ old('correo') }}" />
 				</div>
 				<div class="form-group">
-					<div class="form-group">
-						<input type="text" class="form-control form-control-sm" id="parroquia" name="parroquia" placeholder="parroquía" value="{{ old('parroquia') }}" />
-					</div>
+					<input type="text" class="form-control form-control-sm" id="parroquia" name="parroquia" placeholder="parroquía" value="{{ old('parroquia') }}" />
 				</div>
 				<button type="submit" class="btn btn-primary">
-					Participar
+					PARTICIPAR
 				</button>
 			</form>
 		</div>
