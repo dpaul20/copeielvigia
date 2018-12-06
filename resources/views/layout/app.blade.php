@@ -10,28 +10,27 @@
 			<div class="row"> 
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-md-8">
-							<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+						<div class="col-md-8" id="logo">
+							<img alt="Copei" src="{{ asset('images/copei_7.png') }}" />
 						</div>
-						<div class="col-md-4">
-							 <img src="#">
-							 <img src="#">
-							 <img src="#">
+						<div class="col-md-4" id="cont-social">
+							 <img alt="Copei" class="social" src="{{ asset('images/social/facebook.png') }}" />
+							 <img alt="Copei" class="social" src="{{ asset('images/social/twitter.png') }}" />
+							 <img alt="Copei" class="social" src="{{ asset('images/social/instagram.png') }}" />
 						</div>
 
 					</div>
 				</div>
 			</div> 
 		</header>{{-- fin header  --}}
-		<div class="row">{{-- Navbar --}}
-			<div class="col-md-12">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
-				  	<a class="navbar-brand" href="/">{{ config('app.name') }}</a>
-				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="navbar-toggler-icon"></span>
-					</button> 
+		<div class="row"  >{{-- Navbar --}}
+			<div class="col-md-12" id="navbar">
+				<nav class="navbar navbar-expand-lg" id="">
 				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					    <ul class="navbar-nav mr-auto">
+					    	<li class="nav-item">
+						        <a class="nav-link" href="/">{{ config('app.name') }}</a>
+							</li>
 							<li class="nav-item">
 						        <a class="nav-link" href="/copei/nosotros">Nosotros</a>
 							</li>
@@ -54,7 +53,7 @@
 						        <a class="nav-link" href="/descargas">Descargas</a>
 							</li>
 							<li class="nav-item">
-						        <a class="nav-link" href="/jdc">Jdc</a>
+						        <a class="nav-link" href="/jdc">Juventud Demócrata Cristiana</a>
 							</li>
 					    </ul>
 					    <ul class="navbar-nav ml-auto">
@@ -92,26 +91,20 @@
 
 			</div>
 		</div>{{-- fin navbar --}}
-		
-    	<div class="row">
-      		<div class="col-md-8">
-        		@yield('content')
-      		</div>
-      		<div class="col-md-4">
-        		<h2>twitter</h2>
-      		</div>
-   		</div>	{{-- fin row --}}
-
-   		@yield('formulario')
+		{{-- contenedor --}}
+		<div class="row" id="principal">
+			<div class="col-md-8">
+				@yield('content')
+			</div>
+			<div class="col-md-4" id="twitter">
+				<a class="twitter-timeline" data-lang="es" data-height="481" href="https://twitter.com/CopeiElVigia?ref_src=twsrc%5Etfw">Tweets by CopeiElVigia</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></script>
+			</div>
+		</div>{{-- Fin contenedor --}}
 
 		<div class="row"> {{-- footer --}}
 			<div class="col-md-12">
 				<footer>
-					<address>
-						<strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
-					</address>
-				
-					{{ config('app.name') }}. Todos los derechos reservados
+					{{ config('app.name') }}. Copyright Copei Municipio Alberto Adriani.
 				</footer>
 			</div>
 		</div> {{-- fin row footer --}}
