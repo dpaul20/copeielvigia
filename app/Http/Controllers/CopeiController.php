@@ -11,7 +11,7 @@ class CopeiController extends Controller
 {
     public function index() //Muestra las tres ultimas noticias
     {
-    	$noticias = Noticia::latest()->take(2)->get();
+    	$noticias = Noticia::latest()->paginate(2);
         //Copei::create(request()->all());
     	return view('/welcome', ['noticias'=>$noticias]);
     }

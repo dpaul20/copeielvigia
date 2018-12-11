@@ -10496,7 +10496,8 @@ header {
   padding: 15px;
 }
 #logo img{
-  height: 51px;
+   width: 25%;
+   height: auto;
 }
 #cont-social{
   text-align: right;
@@ -10514,6 +10515,7 @@ header {
   background-color: #8CC63D;
   color: #004020;
   border-radius: 12px;
+  font-weight: bold;
 
 }
 /*contenedor*/
@@ -10553,6 +10555,7 @@ header {
 
 .post-title {
     font-weight: bold;
+    font-size: 150%;
     margin-left: 15px;
 
 }
@@ -10599,4 +10602,13 @@ header {
 .social{
   height:31px;
   width:31px;
+}
+
+/*paginacion*/
+.pagination{
+  display: inline-flex;
+  margin: auto;
+}
+.alert.alert-info{
+  margin-right: 20px;
 }

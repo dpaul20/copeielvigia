@@ -25,14 +25,14 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12" id="paginacion">
-			<span>paginación</span>
+			<span>{{ $noticias->links() }}</span>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12" id="formulario">
 			<form action="/" method="POST" role="form" class="form-inline">
 				{{ csrf_field() }}
-				@include('copei._form_validador')
+				@include('copei._form_validador_participa')
 				<div class="form-group">
 					<input type="text" class="form-control form-control-sm" id="" name="nombre" placeholder="nombre" value="{{ old('nombre') }}" />
 				</div>
@@ -61,4 +61,3 @@
 		</div>
 	</div>
 @endsection {{-- fin content --}}
-	

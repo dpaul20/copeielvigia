@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Afiliado;
 use Illuminate\Http\Request;
+use App\Http\Requests\AfiliadoRequest;
 
 class AfiliadoController extends Controller
 {
