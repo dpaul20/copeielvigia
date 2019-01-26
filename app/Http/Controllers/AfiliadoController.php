@@ -37,6 +37,12 @@ class AfiliadoController extends Controller
     public function store(AfiliadoRequest $request)
     {
         Afiliado::create(request()->all());
+        $iniciar=curl_init();
+        curl_setopt($iniciar, CURLOPT_URL, 'http://localhost:8000/');
+        /*$para='dpaul_20@hotmail.com';
+        $asunto='Prueba';
+        $mensaje='este es un mensaje de prueba';
+        mail($para, $asunto, $mensaje);*/
         return back();
     }
 
